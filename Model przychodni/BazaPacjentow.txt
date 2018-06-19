@@ -1,0 +1,7 @@
+6 M Hanna Anna 123654345 Kochanowskiego 2 Tarnowskie 23 2222 222
+1 M Marcin Dubielowski 422422312 ul.Rymanowska 123/2 Katowice 40-223 93331293442 123/231/12312
+0 M Marcel Kowalski 422552552 ul.Kwiatowa 24/2 Katowice 42-203 99332200423 224/233/6633
+2 M Dominik Kowalski 533222444 ul.Marzenowska 13/2 Orzech 31-223 93332233223 346/231/1133
+4 K Lidia Nowaczek 123124412 ul.Memorialu 124/124 Kedzierzyn 14-124 13124441129 12/4124/1444
+3 M Donald Nowakowski 433234224 ul.Koryncka 13/3 Bytow 31-223 93332233213 346/231/2115
+5 K Aneta Romanowska 433234263 ul.Kosztorysu 123 Lubliniec 13-112 12641761555 124/123/123
