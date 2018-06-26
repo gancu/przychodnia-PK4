@@ -1,0 +1,9 @@
+﻿  interfejs.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.h(32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(307): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(345): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(457): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(500): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(543): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(560): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Model przychodni.vcxproj -> C:\Users\Gancu\Documents\Projekt\przychodnia-PK4\x64\Debug\Baza danych - przychodnia.exe

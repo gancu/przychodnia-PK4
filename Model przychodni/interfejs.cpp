@@ -611,6 +611,7 @@ void interfejs::WypiszSzczegolowoPrzychodnie() const
 	for (auto it = _lista_przychodni.begin(); it != _lista_przychodni.end(); ++it)
 	{
 		(*it)->WypiszSzczegoloweInformacjePrzychodnia();
+		cout << endl;
 	}
 	cout << endl;
 }

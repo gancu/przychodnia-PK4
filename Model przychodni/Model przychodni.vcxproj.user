@@ -4,4 +4,8 @@
     <LocalDebuggerCommandArguments>-p BazaPrzychodni.txt -o BazaPacjentow.txt -l BazaLekarzy.txt</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-p BazaPrzychodni.txt -o BazaPacjentow.txt -l BazaLekarzy.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>
