@@ -6,6 +6,15 @@ Adres::Adres() : _ulica(""), _numer_domu(""), _miasto(""), _kod_pocztowy("") {}
 
 Adres::~Adres() {}
 
+bool Adres::SprawdzPoprawnosc(std::regex & wyrazenie, std::string & dane)
+{
+		if (regex_match(dane, wyrazenie)) {
+			return true;
+		}
+		return false;
+}
+
+
 void Adres::WczytajAdres(const std::string & adres)
 {
 	int prev = adres.find_first_of(" ");
@@ -21,19 +30,49 @@ void Adres::WczytajAdres(const std::string & adres)
 
 void Adres::ZapytajInformacje()
 {
+	string tmp = "";
+	regex regex;
+
 	cout << "Podaj adres: (ulica, numer domu / mieszkania, miejscowosc, kod pocztowy) " << endl;
+	regex = "([A-Z]{1}[a-zA-Z]{1,}\\s+\\w{1,}\\s+\\w{1,}|[A-Z]{1}[a-zA-Z]{1,}\\s+\\w{1,}|[A-Z]{1}[a-zA-Z]{1,})";
+	cout << "Podaj nazwe ulicy : ";
+	cin.ignore();
+	getline(cin, tmp);
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj nazwe ulicy : ";
+		getline(cin, tmp);
+	}
+	_ulica = tmp;
 
-	cout << "Ulica: ";
-	cin >> _ulica;
-
+	regex = "(\\d{1,}[/]\\d{1,}|\\d{1,})";
 	cout << "Numer budynku: ";
-	cin >> _numer_domu;
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie numer budynku ex(13 lub 123/3) : ";
+		cin >> tmp;
+	}
+	_numer_domu = tmp;
 
-	cout << "Miasto: ";
-	cin >> _miasto;
 
-	cout << "Kod pocztowy: ";
-	cin >> _kod_pocztowy;
+	regex = "([A-Z]{1}[a-zA-Z]{1,}\\s+\\w{1,}\\s+\\w{1,}|[A-Z]{1}[a-zA-Z]{1,}\\s+\\w{1,}|[A-Z]{1}[a-zA-Z]{1,})";
+	cout << "Miasto : ";
+	cin.ignore();
+	getline(cin, tmp);
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawne miasto : ";
+		getline(cin, tmp);
+	}
+	_miasto = tmp;
+
+
+	regex = "(\\d{2}[-]\\d{3})";
+	cout << "Kod pocztowy : ";
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawny kod pocztowy (xx-xxx) : ";
+		getline(cin, tmp);
+	}
+	_kod_pocztowy = tmp;
 	cout << endl;
 }
 

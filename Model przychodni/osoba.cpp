@@ -6,6 +6,14 @@ osoba::osoba() : _id(-1), _imie(""), _nazwisko(""), _plec('0'), _numer_telefonu(
 
 osoba::~osoba() {}
 
+bool osoba::SprawdzPoprawnosc(std::regex & wyrazenie, std::string & dane)
+{
+		if (regex_match(dane, wyrazenie)) {
+			return true;
+		}
+		return false;
+	}
+
 void osoba::WczytajInformacje(const std::string& informacje)
 {
 	int prev = informacje.find_first_of(" ");
@@ -41,16 +49,42 @@ void osoba::WczytajInformacje(const std::string& informacje)
 
 void osoba::ZapytajPodstawoweInformacje(int id)
 {
+	string tmp;
+	regex regex;
 	_id = id;
 
-	cout << "Podaj imie i nazwisko: ";
-	cin >> _imie >> _nazwisko;
+	regex = "([A-Z]+\\w{1,10})";
+	cout << "Podaj Imie: ";
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie imie : ";
+		cin >> tmp;
+	}
+	_imie = tmp;
+
+	cout << "Podaj Nazwisko: ";
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie nazwisko : ";
+		cin >> tmp;
+	}
+	_nazwisko = tmp;
 
 	cout << "Podaj plec: (K/M) ";
-	cin >> _plec;
-
+	cin >> tmp;
+	while(!(tmp[0]=='K' || tmp[0]=='M')) {
+		cout << "Wprowadz poprawnie plec (K/M) " <<endl;
+		cin >> tmp;
+	} _plec = tmp[0];
+		
+	regex = "(\\d{9})";
 	cout << "Podaj numer kontaktowy: ";
-	cin >> _numer_telefonu;
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawny numer kontaktowy (9 znakow 0-9): ";
+		cin >> tmp;
+	}
+	_numer_telefonu = stoi(tmp);
 
 	_adres.ZapytajInformacje();
 }

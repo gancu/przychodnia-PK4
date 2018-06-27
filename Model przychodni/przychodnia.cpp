@@ -5,6 +5,14 @@ using namespace std;
 przychodnia::przychodnia():_nazwa("") {}
 
 przychodnia::~przychodnia() {}
+bool przychodnia::SprawdzPoprawnosc(std::regex & wyrazenie, std::string & dane)
+{
+
+	if (regex_match(dane, wyrazenie)) {
+		return true;
+	}
+	return false;
+}
 
 void przychodnia::WczytajInformacjePrzychodni(const std::string& informacje)
 {
@@ -37,6 +45,7 @@ void przychodnia::WczytajInformacjePrzychodni(const std::string& informacje)
 
 void przychodnia::ZapytanieInformacje()
 {
+
 	cout << "Podaj nazwe przychodni: ";
 	getline(cin, _nazwa);
 	while (_nazwa == "" || _nazwa == " ")
@@ -61,6 +70,8 @@ void przychodnia::DodajSpecjalizacje()
 		cin >> temp;
 	}
 }
+
+
 
 void przychodnia::ZapiszSpecjalizacjeDoPliku(std::ofstream& plik) const
 {

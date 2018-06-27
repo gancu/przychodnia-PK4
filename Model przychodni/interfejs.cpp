@@ -63,11 +63,30 @@ void interfejs::WyswietlSzczegolowe()
 
 }
 
+bool interfejs::CzyWpisanoCyfre(string& a)
+{
+	try
+	{
+		stoi(a);
+	}
+	catch (exception)
+	{
+		cout << "Prosze podac cyfre: " << endl;
+		return false;
+	}
+	return true;
+}
+
 int interfejs::PobierzWybor(int kres_dolny, int kres_gorny)
 {
+	string tmp;
 	int wybor;
-	cin >> wybor;
+	cin >> tmp;
+	while (!CzyWpisanoCyfre(tmp)) {
+		cin >> tmp;
+	}
 
+	wybor = stoi(tmp);
 	while (wybor < kres_dolny || wybor >= kres_gorny)
 	{
 		cout << "Podales numer spoza zakresu. Wprowadz numer ponownie: ";

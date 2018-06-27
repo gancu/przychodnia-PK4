@@ -8,6 +8,13 @@ lekarz::lekarz() :osoba(), _specjalizacja("") {}
 
 lekarz::~lekarz() {}
 
+bool lekarz::SprawdzPoprawnosc(std::regex & wyrazenie, std::string & dane)
+{
+	if (regex_match(dane, wyrazenie)) {
+		return true;
+	}
+	return false;
+}
 void lekarz::WczytajDaneLekarzy(const std::string& dane_lekarza)
 {
 	int zawod = dane_lekarza.find_last_of(" ");
@@ -23,10 +30,21 @@ void lekarz::WczytajDaneLekarzy(const std::string& dane_lekarza)
 void lekarz::ZapytanieInformacje()
 {
 	ZapytajPodstawoweInformacje(_aktualny_id);
+	string tmp;
+	regex regex;
 
+	regex = "([A-Za-z]{1,})";
 	cout << "Podaj specjalizacje lekarza: ";
-	cin >> _specjalizacja;
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie specjalizacje lekarza : ";
+		cin >> tmp;
+	}
+	_specjalizacja = tmp;
+
 }
+
+
 
 std::string lekarz::WypiszPodstawoweDane() const
 {

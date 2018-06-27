@@ -8,6 +8,14 @@ pacjent::pacjent() :osoba(), _pesel(-1), _numer_ubezpieczenia("") {}
 
 pacjent::~pacjent() {}
 
+
+bool pacjent::SprawdzPoprawnosc(std::regex & wyrazenie, std::string & dane)
+{
+	if (regex_match(dane, wyrazenie)) {
+		return true;
+	}
+	return false;
+}
 void pacjent::WczytajDanePacjenta(const std::string& _dane_pacjenta)
 {
 	int przed_nr_ubezp = _dane_pacjenta.find_last_of(" ");
@@ -28,12 +36,27 @@ void pacjent::WczytajDanePacjenta(const std::string& _dane_pacjenta)
 void pacjent::ZapytanieInformacje()
 {
 	ZapytajPodstawoweInformacje(_aktualny_id);
-	
+	string tmp;
+	regex regex;
+
+	regex = "(\\d{11})";
 	cout << "Podaj pesel: ";
-	cin >> _pesel;
-		
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie numer pesel (11 cyfr): ";
+		cin >> tmp;
+	}
+	_pesel = stoll(tmp);
+
+
+	regex = "(\\d{1,})";
 	cout << "Podaj numer ubzepieczenia: ";
-	cin >> _numer_ubezpieczenia;
+	cin >> tmp;
+	while (!SprawdzPoprawnosc(regex, tmp)) {
+		cout << "Podaj poprawnie numer ubezpieczenia : ";
+		cin >> tmp;
+	}
+	_numer_ubezpieczenia = stoll(tmp);
 }
 
 void pacjent::ZapiszPacjentaDoPliku(std::ofstream& plik) const
