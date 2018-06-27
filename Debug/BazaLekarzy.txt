@@ -1,6 +1,4 @@
-0 M Mariusz Kowalski 333444111 ul.Kwiatowa 15/3 Katowice 40-900 chirurg: 2 1 0 3 3
-3 M Krzysztof Mazowiecki 774223224 ul.Pedziola 244/2 Rybnik 41-224 laryngolog
-1 K Lidia Nowakowska 644323314 ul.Pilsudzkiego 522 Brnow 40-302 pediatra
-2 M Bartosz Nowosadzki 422332552 ul.Niszowa 14 Rybnik 41-223 chirurg
-5 K Klaudia Szczebrzeszyn 234634124 ul.Podlasa 124 Bytom 42-242 pediatra
-4 K Katarzyna Urbanek 242332112 ul.Mazowiecka 12/23 Gliwice 34-244 dermatolog
+0 M Mariusz Kowalski 333444111 ul.Kwiatowa 15/3 Katowice 40-900 chirurg
+1 K Lidia Nowakowska 644323314 ul.Pilsudzkiego 522/1 Brnow 40-302 pediatra: 4 5 2 0 3
+2 M Bartosz Nowosadzki 422332552 ul.Niszowa 14/1 Rybnik 41-223 chirurg
+3 K Anna Wanna 321234567 ul.Inna 15/87 Tarnow 47-895 pediatra

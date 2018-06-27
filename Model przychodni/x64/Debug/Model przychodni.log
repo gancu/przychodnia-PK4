@@ -1,4 +1,8 @@
-﻿  interfejs.cpp
+﻿  Adres.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\adres.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\adres.cpp(13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\adres.cpp(16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  interfejs.cpp
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.h(32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(307): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(345): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
@@ -6,4 +10,29 @@ c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(500): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(543): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\interfejs.cpp(560): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  lekarz.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarz.cpp(13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  lekarzLista.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.h(32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.cpp(27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.cpp(33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\lekarzlista.h(32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  osoba.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\osoba.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\osoba.cpp(17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\osoba.cpp(22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\osoba.cpp(27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\osoba.cpp(32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  pacjent.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\pacjent.cpp(13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\pacjent.cpp(14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\pacjent.cpp(21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  przychodnia.cpp
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\przychodnia.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\przychodnia.cpp(12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\przychodnia.cpp(26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\gancu\documents\projekt\przychodnia-pk4\model przychodni\przychodnia.cpp(32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   Model przychodni.vcxproj -> C:\Users\Gancu\Documents\Projekt\przychodnia-PK4\x64\Debug\Baza danych - przychodnia.exe
