@@ -48,7 +48,7 @@ void lekarz::ZapytanieInformacje()
 
 std::string lekarz::WypiszPodstawoweDane() const
 {
-	return _imie + " " + _nazwisko + "\t" + _specjalizacja;
+	return _imie + " " + _nazwisko + "        " + _specjalizacja;
 }
 
 void lekarz::WypiszSzczegoloweDane() const

@@ -8,6 +8,7 @@ interfejs::~interfejs() {}
 
 void interfejs::WyswietlMenu()
 {
+	cout << stoi("0");
 	cout << endl;
 	cout << "MENU:" << endl;
 	cout << "1\tDodaj do bazdy danych." << endl;
@@ -68,13 +69,13 @@ bool interfejs::CzyWpisanoCyfre(string& a)
 	try
 	{
 		stoi(a);
+		return true;
 	}
 	catch (exception)
 	{
 		cout << "Prosze podac cyfre: " << endl;
 		return false;
 	}
-	return true;
 }
 
 int interfejs::PobierzWybor(int kres_dolny, int kres_gorny)
@@ -113,18 +114,29 @@ void interfejs::WypiszLekrzy() const
 
 	for (auto it = _lekarze.begin(); it != _lekarze.end(); ++it, ++i)
 	{
-		cout << i << ".\t" << it->second->WypiszPodstawoweDaneLekarza() << "\t" << it->second->QueueSize() << endl;
+		cout << std::setiosflags(std::ios::left);
+		cout << std::setw(3);
+		cout << i; 
+		cout << std::setw(30) << it->second->WypiszPodstawoweDaneLekarza() << "  " << it->second->QueueSize() << endl;
 	}
 }
 
 void interfejs::WypiszPacjentow() const
 {
 	int i = 0;
-	cout << "Nr\tNazwisko\tPesel" << endl;
+	cout << std::setiosflags(std::ios::left);
+	cout << std::setw(3);
+	cout << "Nr";
+	cout << std::setw(15);
+	cout << "Nazwisko";
+	cout << std::setw(15);
+	cout << "Pesel" << endl;
 
 	for (auto it = _pacjenci.begin(); it != _pacjenci.end(); ++it, ++i)
 	{
-		cout << i << ".\t" << it->second->PobierzPodstawoweDanePacjenta() << endl;
+		cout << std::setw(3);
+		cout << i;
+		cout << std::setw(45) << it->second->PobierzPodstawoweDanePacjenta() << endl;
 	}
 }
 
