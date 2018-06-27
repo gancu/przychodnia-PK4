@@ -42,7 +42,7 @@ void Adres::ZapytajInformacje()
 		cout << "Podaj nazwe ulicy : ";
 		getline(cin, tmp);
 	}
-	_ulica = tmp;
+	_ulica = "ul." + tmp;
 
 	regex = "(\\d{1,}[/]\\d{1,}|\\d{1,})";
 	cout << "Numer budynku: ";
@@ -84,8 +84,8 @@ void Adres::ZapiszDoPliku(std::ofstream& plik) const
 void Adres::WypiszAdres() const
 {
 	cout << std::setiosflags(std::ios::left);
-	cout << std::setw(15) << _ulica << "\t";
+	cout << std::setw(20) << _ulica << "\t";
 	cout << std::setw(5) << _numer_domu << "\t";
-	cout << std::setw(15) << _miasto << "\t";
+	cout << std::setw(20) << _miasto << "\t";
 	cout << std::setw(6) << _kod_pocztowy << "\t";
 }

@@ -1,6 +1,6 @@
-6 M Jacek Ganszczyk 521478987 ul.Perkoza 9/13 Gliwice 44-122 94544545654 789/875/89654
-0 M Marcel Kowalski 422552552 ul.Kwiatowa 24/2 Katowice 42-203 99332200423 224/233/6633
-2 M Dominik Kowalski 533222444 ul.Marzenowska 13/2 Orzech 31-223 93332233223 346/231/1133
-4 K Lidia Nowaczek 123124412 ul.Memorialu 124/124 Kedzierzyn 14-124 13124441129 12/4124/1444
-3 M Donald Nowakowski 433234224 ul.Koryncka 13/3 Bytow 31-223 93332233213 346/231/2115
-5 K Aneta Romanowska 433234263 ul.Kosztorysu 123 Lubliniec 13-112 12641761555 124/123/123
+6 M Jacek Ganszczyk 531169937 ul. Jana Kochanowskiego 9/2 Tarnowskie Gory 42-600 94041505071 456789456
+0 M Marcel Kowalski 531456879 ul.Kwiatowa 24/2 Katowice 42-203 99332200423 224/233/6633
+2 M Dominik Kowalski 668456987 ul.Marzenowska 13/2 Orzech 31-223 93332233223 346/231/1133
+4 K Lidia Nowaczek 554665998 ul.Memorialu 124/124 Kedzierzyn 14-124 13124441129 12/4124/1444
+3 M Donald Nowakowski 788895985 ul.Koryncka 13/3 Bytow 31-223 93332233213 346/231/2115
+5 K Aneta Romanowska 531456879 ul.Kosztorysu 123 Lubliniec 13-112 12641761555 124/123/123

@@ -2,6 +2,9 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include<iomanip>
+#include <regex>
+
  
 class Adres
 {
@@ -14,6 +17,7 @@ public:
 	Adres();
 	~Adres();
 	
+	bool SprawdzPoprawnosc(std::regex& wyrazenie, std::string& dane);
 	void WczytajAdres(const std::string& adres);
 	void ZapytajInformacje();
 

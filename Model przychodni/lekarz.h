@@ -1,4 +1,6 @@
 #pragma once
+#include <regex>
+#include<iomanip>
 #include "osoba.h"
  
 class lekarz :
@@ -14,6 +16,7 @@ public:
 
 	void WczytajDaneLekarzy(const std::string& _dane_lekarza);
 	void ZapytanieInformacje();
+	bool SprawdzPoprawnosc(std::regex& wyrazenie, std::string& dane);
 
 	void WypiszSzczegoloweDane() const;
 	std::string WypiszPodstawoweDane() const;

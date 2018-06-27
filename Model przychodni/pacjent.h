@@ -13,6 +13,7 @@ public:
 	pacjent();
 	~pacjent();
 
+	bool SprawdzPoprawnosc(std::regex& wyrazenie, std::string& dane);
 	void WczytajDanePacjenta(const std::string& _dane_pacjenta);
 	void ZapytanieInformacje();
 
@@ -21,7 +22,7 @@ public:
 
 	std::string	PobierzNazwisko() const { return _nazwisko; }
 	int PobierzId() const { return _id; }
-	std::string PobierzPodstawoweDanePacjenta() const { return _imie + " " + _nazwisko + "\t" + std::to_string(_pesel); }
+	std::string PobierzPodstawoweDanePacjenta() const { return _imie + " " + _nazwisko + " " + std::to_string(_pesel); }
 	static int PobierzAkutalneId() { return _aktualny_id; }
 };
 

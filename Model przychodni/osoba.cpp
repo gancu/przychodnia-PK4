@@ -53,7 +53,7 @@ void osoba::ZapytajPodstawoweInformacje(int id)
 	regex regex;
 	_id = id;
 
-	regex = "([A-Z]+\\w{1,10})";
+	regex = "([A-Z]+[a-z]{1,10})";
 	cout << "Podaj Imie: ";
 	cin >> tmp;
 	while (!SprawdzPoprawnosc(regex, tmp)) {

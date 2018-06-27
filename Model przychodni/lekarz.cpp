@@ -1,7 +1,7 @@
 #include "lekarz.h"
 
 using namespace std;
- 
+
 int lekarz::_aktualny_id = 0;
 
 lekarz::lekarz() :osoba(), _specjalizacja("") {}
@@ -22,7 +22,7 @@ void lekarz::WczytajDaneLekarzy(const std::string& dane_lekarza)
 
 	WczytajInformacje(podstawowe_inf);
 
-	_specjalizacja = dane_lekarza.substr(zawod+1);
+	_specjalizacja = dane_lekarza.substr(zawod + 1);
 
 	_aktualny_id++;
 }
@@ -41,9 +41,7 @@ void lekarz::ZapytanieInformacje()
 		cin >> tmp;
 	}
 	_specjalizacja = tmp;
-
 }
-
 
 
 std::string lekarz::WypiszPodstawoweDane() const

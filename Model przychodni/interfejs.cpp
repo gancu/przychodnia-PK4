@@ -8,7 +8,6 @@ interfejs::~interfejs() {}
 
 void interfejs::WyswietlMenu()
 {
-	cout << stoi("0");
 	cout << endl;
 	cout << "MENU:" << endl;
 	cout << "1\tDodaj do bazdy danych." << endl;
@@ -385,9 +384,14 @@ void interfejs::Program(int argc, char** argv)
 		cout << "Blad na etapie wczytywania parametrow" << endl;
 		return;
 	}
-
-	WczytajZPlikow();
-
+	cout << "-------------MedyC++---------------" << endl;
+	try {
+		WczytajZPlikow();
+	}
+	catch (exception) {
+		cout << "Bledne pliki wejsciowe!";
+		return;
+	}
 	while(!koniec)
 	{
 		WyswietlMenu();
@@ -656,7 +660,6 @@ void interfejs::WczytajPacjentow()
 	{
 		string informacje;
 		getline(plik, informacje);
-
 		if(informacje == "")
 		{
 			continue;

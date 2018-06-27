@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <regex>
+#include<iomanip>
 #include "Adres.h"
  
 class osoba
@@ -14,7 +16,8 @@ protected:
 	unsigned int _numer_telefonu;
 
 public:
-
+	
+	bool SprawdzPoprawnosc(std::regex& wyrazenie, std::string& dane);
 	void WczytajInformacje(const std::string& informacje);
 	void ZapytajPodstawoweInformacje(int id);
 

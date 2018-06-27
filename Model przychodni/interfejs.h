@@ -2,6 +2,7 @@
 #include <map>
 #include <fstream>
 #include <iostream>
+#include<iomanip>
 #include "pacjent.h"
 #include "lekarzLista.h"
 #include "przychodnia.h"
@@ -74,7 +75,10 @@ private:
 	static void WyswietlUsuwanie();
 	static void WyswietlSzczegolowe();
 
+
+
 	static int PobierzWybor(int kres_dolny, int kres_gorny);
+	static bool CzyWpisanoCyfre(std::string & a);
 
 	//metody do wyspietlania informacji
 	void WypiszPrzychodnie() const;

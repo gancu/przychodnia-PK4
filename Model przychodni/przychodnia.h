@@ -1,4 +1,6 @@
 #pragma once
+#include <regex>
+#include<iomanip>
 #include "Adres.h"
 #include <forward_list>
  
@@ -15,6 +17,7 @@ public:
 	void WczytajInformacjePrzychodni(const std::string& informacje);
 	void ZapytanieInformacje();
 	void DodajSpecjalizacje();
+	bool SprawdzPoprawnosc(std::regex& wyrazenie, std::string& dane);
 
 	void ZapiszSpecjalizacjeDoPliku(std::ofstream& plik) const;
 	void ZapiszPrzychodnieDoPliku(std::ofstream& plik) const;

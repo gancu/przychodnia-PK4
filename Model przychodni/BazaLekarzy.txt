@@ -1,4 +1,5 @@
+4 M Jan Braun 789987789 ul.Zygmunta Starego III 3 Opatowice Male 87-988 pediatra
 0 M Mariusz Kowalski 333444111 ul.Kwiatowa 15/3 Katowice 40-900 chirurg
 1 K Lidia Nowakowska 644323314 ul.Pilsudzkiego 522/1 Brnow 40-302 pediatra: 4 5 2 0 3
 2 M Bartosz Nowosadzki 422332552 ul.Niszowa 14/1 Rybnik 41-223 chirurg
-3 K Anna Wanna 321234567 ul.Inna 15/87 Tarnow 47-895 pediatra
+3 K Anna Waniecka 321234567 ul.Inna 15/87 Tarnow 47-895 pediatra
