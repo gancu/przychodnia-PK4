@@ -98,12 +98,14 @@ void przychodnia::ZapiszPrzychodnieDoPliku(std::ofstream& plik) const
 
 void przychodnia::WypiszSzczegoloweInformacjePrzychodnia() const
 {
-	cout << _nazwa << " ";
+	cout << std::setiosflags(std::ios::left);
+	cout << std::setw(30) << _nazwa;
 	_adres.WypiszAdres();
-	cout << endl << "  Obslugiwane specjalizacje: ";
+	cout << endl;
+	cout << std::setw(28)<< "Obslugiwane specjalizacje: ";
 	for (auto it = _obslugiwane_specjalizacje.begin(); it != _obslugiwane_specjalizacje.end(); ++it)
 	{
-		cout << (*it) << " ";
+		cout << std::setw(12) << (*it);
 	}
 	cout << endl;
 }

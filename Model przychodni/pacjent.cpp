@@ -56,7 +56,7 @@ void pacjent::ZapytanieInformacje()
 		cout << "Podaj poprawnie numer ubezpieczenia : ";
 		cin >> tmp;
 	}
-	_numer_ubezpieczenia = stoll(tmp);
+	_numer_ubezpieczenia = tmp;
 }
 
 void pacjent::ZapiszPacjentaDoPliku(std::ofstream& plik) const
@@ -68,5 +68,7 @@ void pacjent::ZapiszPacjentaDoPliku(std::ofstream& plik) const
 void pacjent::WypiszSzczegoloweInformacjePacjenta() const
 {
 	WypiszSzczegoloweInformacjeOsoba();
-	cout<< _pesel << " " << _numer_ubezpieczenia << endl;
+
+	cout << std::setw(11) << _pesel;
+	cout << std::setw(11) << _numer_ubezpieczenia << endl;
 }

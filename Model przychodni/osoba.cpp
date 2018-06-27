@@ -98,9 +98,12 @@ void osoba::ZapiszOsobeDoPliku(std::ofstream& plik) const
 
 void osoba::WypiszSzczegoloweInformacjeOsoba() const
 {
-	cout << _id << "\t" << _imie << "\t" << _nazwisko << "\t";
+	cout << std::setiosflags(std::ios::left);
+	cout << std::setw(2) << _id;
+	cout << std::setw(15) << _imie;
+	cout << std::setw(15) << _nazwisko;
 	_adres.WypiszAdres();
-	cout << _numer_telefonu << "\t";
+	cout << std::setw(10) << _numer_telefonu;
 }
 
 

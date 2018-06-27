@@ -66,6 +66,8 @@ void lekarzLista::ZapiszLekarzListaDoPliku(std::ofstream& plik)
 void lekarzLista::WypiszSzczegoloweInformacjeLekarza() const
 {
 	_lekarz.WypiszSzczegoloweDane();
+	cout << std::setiosflags(std::ios::left);
+	cout << std::setw(10);
 	cout << this->QueueSize() << endl;
 }
 

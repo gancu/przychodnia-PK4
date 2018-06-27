@@ -54,6 +54,7 @@ std::string lekarz::WypiszPodstawoweDane() const
 void lekarz::WypiszSzczegoloweDane() const
 {
 	WypiszSzczegoloweInformacjeOsoba();
+	cout << std::setw(10);
 	cout << _specjalizacja << "\t";
 }
 
